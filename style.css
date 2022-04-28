@@ -1,0 +1,11 @@
+/* images need to all have the same width and height */
+
+/* style memory game container and front and back facing elements. will need flex box. position cards on top of each other*/
+
+/* perspective: adds depth
+transform-style: preserve 3d 
+transition property*/
+
+/* will need to hide the backface visibility + rotate front face 180 on Y */
+
+/* 100x100px squares 300x400 square grid */
