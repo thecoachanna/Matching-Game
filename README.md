@@ -11,3 +11,7 @@ Stretch Goals:
 As a player, I would like to see a timer of how long it takes me to find all matches, so that I can continue to challenge myself.
 As a player, I would like a celebratory animation when I have won the game.
 As a player, I would like the ability to restart the game with matches being randomized.
+
+
+
+Not much progress today due to work schedule, but will be able to Friday. Want to change images to exercises I think vs equipment.
