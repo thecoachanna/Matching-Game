@@ -14,3 +14,5 @@
 // 10. shuffle cards - generate random number between 1-16 (this will be a function) math.random and math.floor then apply to order property in CSS - wrap this function in parenthesis to make it immediatley invoked
 
 //  OR can do a card class list and link cards in an array, iterating through them with a for loop. Use setAttribute
+
+// make a function to hide dsiplay of front or back when it is clicked to ("flip") the card, using the ID

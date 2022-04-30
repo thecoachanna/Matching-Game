@@ -18,13 +18,54 @@ h1 {
     font-size: 50px;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .instructions {
+    height: 100px;
+    width: 200px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-wrap: wrap;
-    -ms-flex-align: center;
+    position: left;
+    
 
+}
+
+.memory-game {
+    height: auto;
+    width: 100vw;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; */
+    /* border: 2px red solid; */
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    justify-content: center;
+    gap: 10px;
+    
+    
+}
+
+.memory-card {
+    
+    
+}
+
+.front-face {
+    padding: 5px;
+    /* display: none; */
+    
+}
+
+.back-face {
+    padding: 5px;
+    display: none;
+    
+  
 }
