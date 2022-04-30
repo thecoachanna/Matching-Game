@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer scr="app.js"></script>
+    <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Card Matching Game</title>
 </head>
@@ -18,80 +18,90 @@
             won when you've found all 8 card matches!</span>
     </div>
 
-     <!-- add ID to images -->
+    <!-- add ID to images -->
     <section class="memory-game">
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Back Squat.png" alt="Barbell Back Squat" />
+            <img class="question-mark" id="Question-Back-Squat" data-exercise="back-squat" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Back-Squat" data-exercise="back-squat" src="images/Back Squat.png" alt="Barbell Back Squat" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Wall Ball.png" alt="Wall Ball" />
+            <img class="question-mark" id="Question-Wall-Ball" data-exercise="wall-ball" src="images/Question Mark (1).png" alt="question-mark" />
+            <img class="exercise" id="Wall-Ball" data-exercise="wall-ball" src="images/Wall Ball.png" alt="Wall Ball" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Push Press.png" alt="Push Press" />
+            <img class="question-mark" id="Question-Push-Press" data-exercise="push-press" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Push-Press" data-exercise="push-press" src="images/Push Press.png" alt="Push Press" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Sit-ups.png" alt="Sit-ups" />
+            <img class="question-mark" id="Question-Sit-ups" data-exercise="sit-ups" src="images/Question Mark (1).png" alt="question-mark" />
+            <img class="exercise" id="Sit-ups" data-exercise="sit-ups" src="images/Sit-ups.png" alt="Sit-ups" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Bicep Curls.png" alt="Bicep Curls" />
+            <img class="question-mark" id="Question-Bicep-Curls" data-exercise="bicep-curls" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Bicep-Curls" data-exercise="bicep-curls" src="images/Bicep Curls.png" alt="Bicep Curls" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Yoga.png" alt="Yoga" />
+            <img class="question-mark" id="Question-Yoga" data-exercise="yoga" src="images/Question Mark (1).png" alt="question-mark" />
+            <img class="exercise" id="Yoga" data-exercise="yoga" src="images/Yoga.png" alt="Yoga" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Barbell Deadlift.png" alt="Barbell Deadlift" />
+            <img class="question-mark" id="Question-Barbell-Deadlift" data-exercise="barbell-deadlift" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Barbell-Deadlift" data-exercise="barbell-deadlift" src="images/Barbell Deadlift.png" alt="Barbell Deadlift" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Overhead Squat.png" alt="Overhead Squat" />
+            <img class="question-mark" id="Question-Overhead-Squat" data-exercise="overhead-squat" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Overhead-Squat" data-exercise="overhead-squat" src="images/Overhead Squat.png" alt="Overhead Squat" />
         </div>
 
         <!-- Matching Pairs -->
 
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Back Squat.png" alt="Barbell Back Squat" />
+            <img class="question-mark" id="Question-Back-Squat" data-exercise="back-squat" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Back-Squat" data-exercise="back-squat" src="images/Back Squat.png" alt="Barbell Back Squat" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Wall Ball.png" alt="Wall Ball" />
+            <img class="question-mark" id="Question-Wall-Ball" data-exercise="wall-ball" src="images/Question Mark (1).png" alt="question-mark" />
+            <img class="exercise" id="Wall-Ball" data-exercise="wall-ball" src="images/Wall Ball.png" alt="Wall Ball" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Push Press.png" alt="Push Press" />
+            <img class="question-mark" id="Question-Push-Press" data-exercise="push-press" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Push-Press" data-exercise="push-press" src="images/Push Press.png" alt="Push Press" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Sit-ups.png" alt="Sit-ups" />
+            <img class="question-mark" id="Question-Sit-ups" data-exercise="sit-ups" src="images/Question Mark (1).png" alt="question-mark" />
+            <img class="exercise" id="Sit-ups" data-exercise="sit-ups" src="images/Sit-ups.png" alt="Sit-ups" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Bicep Curls.png" alt="Bicep Curls" />
+            <img class="question-mark" id="Question-Bicep-Curls" data-exercise="bicep-curls" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Bicep-Curls" data-exercise="bicep-curls" src="images/Bicep Curls.png" alt="Bicep Curls" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Yoga.png" alt="Yoga" />
+            <img class="question-mark" id="Question-Yoga" data-exercise="yoga" src="images/Question Mark (1).png" alt="question-mark" />
+            <img class="exercise" id="Yoga" data-exercise="yoga" src="images/Yoga.png" alt="Yoga" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Barbell Deadlift.png" alt="Barbell Deadlift" />
+            <img class="question-mark" id="Question-Barbell-Deadlift" data-exercise="barbell-deadlift" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Barbell-Deadlift" data-exercise="barbell-deadlift" src="images/Barbell Deadlift.png" alt="Barbell Deadlift" />
         </div>
         <div class="memory-card">
-            <img class="front-face" src="images/Question Mark (1).png" alt="question-mark" />
-            <img class="back-face" src="images/Overhead Squat.png" alt="Overhead Squat" />
+            <img class="question-mark" id="Question-Overhead-Squat" data-exercise="overhead-squat" src="images/Question Mark (1).png"
+                alt="question-mark" />
+            <img class="exercise" id="Overhead-Squat" data-exercise="overhead-squat" src="images/Overhead Squat.png" alt="Overhead Squat" />
         </div>
 
         <!-- add data attribute to each card for JS -->
-         
+
     </section>
-   
+
 </body>
 
 </html>

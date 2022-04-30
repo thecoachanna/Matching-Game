@@ -57,13 +57,13 @@ h1 {
     
 }
 
-.front-face {
+.question-mark {
     padding: 5px;
     /* display: none; */
     
 }
 
-.back-face {
+.exercise {
     padding: 5px;
     display: none;
     
