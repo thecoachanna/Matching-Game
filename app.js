@@ -21,7 +21,6 @@ function pickCard(event) {
     }
 }
 
-
 let questionMark = document.querySelectorAll('.question-mark');
 let exercise = document.querySelectorAll('.exercise');
 
