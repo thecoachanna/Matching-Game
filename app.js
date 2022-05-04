@@ -1,5 +1,7 @@
 const cards = document.querySelectorAll('.memory-card');
 
+// cards.sort( () => 0.5 - Math.random() );
+
 cards.forEach(card => card.addEventListener('click', (e) => {
     return pickCard(e);
 
@@ -29,16 +31,27 @@ let maxTwoTurns = 0;
 function checkForAMatch() {
     if (chosenCards[0].dataset.exercise === chosenCards[1].dataset.exercise) {
         alert('You found a match!')
+        foundCards++;
+
 
     } else {
-        setTimeout(function () {
-            chosenCards[0].setAttribute('src', 'images/Question Mark (1).png')
-            chosenCards[1].setAttribute('src', 'images/Question Mark (1).png')
-        }, 2000)
-        
+        alert('This is not a match!')
+        console.log(chosenCards)
+        chosenCards[0].setAttribute('src', 'images/Question_Mark.png')
+        chosenCards[1].setAttribute('src', 'images/Question_Mark.png')      
         
     }
     chosenCards = [];
+}
+
+const cardsInGame = 16;
+let foundCards = 0;
+
+function gameWon() {
+    if (foundCards == cardsInGame){
+        alert('Congrats! You found all of the matches!')
+    }
+    gameWon();
 }
 
 
@@ -48,6 +61,13 @@ function checkForAMatch() {
 
 
 
+// setTimeout(function (chosenCards) {
+        //     console.log(chosenCards)
+        //     chosenCards[0].src = 'images/Question_Mark.png'
+        //     chosenCards[1].src = 'images/Question_Mark.png'
+        //     // chosenCards[0].setAttribute('src', 'images/Question_Mark.png')
+        //     // chosenCards[1].setAttribute('src', 'images/Question_Mark.png')
+        // }, 2000)
 
 
 // document.body.addEventListener('click', function (e) {

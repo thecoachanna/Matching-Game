@@ -38,11 +38,6 @@ h1 {
 .memory-game {
     height: auto;
     width: 100vw;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center; */
-    /* border: 2px red solid; */
     display: grid;
     grid-template-rows: 100px 100px 100px 100px;
     grid-template-columns: 100px 100px 100px 100px;
@@ -54,15 +49,15 @@ h1 {
 }
 
 .memory-card {
-    /* perspective: 1000px; */
+    perspective: 1000px;
     
 }
 
 .question-mark {
     padding: 5px;
     /* display: none; */
-    /* transform-style: preserve-3d;
-    transition: transform .5s; */
+    transform-style: preserve-3d;
+    transition: transform .5s;
     
 }
 
