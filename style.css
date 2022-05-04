@@ -50,22 +50,26 @@ h1 {
     gap: 10px;
     
     
+    
 }
 
 .memory-card {
-    
+    /* perspective: 1000px; */
     
 }
 
 .question-mark {
     padding: 5px;
     /* display: none; */
+    /* transform-style: preserve-3d;
+    transition: transform .5s; */
     
 }
 
 .exercise {
     padding: 5px;
     display: none;
+    
     
   
 }
