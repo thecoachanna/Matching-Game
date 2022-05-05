@@ -1,6 +1,18 @@
+const gameBoard = document.getElementById('gameBoard')
+const exerciseCards = gameBoard.children
+
+let fragment = document.createDocumentFragment() 
+while (exerciseCards.length > 0) {
+    let randomCard = Math.floor(Math.random() * exerciseCards.length)
+    console.log(randomCard)
+    fragment.appendChild(exerciseCards[randomCard])
+    }
+
+gameBoard.appendChild(fragment)
+
 const cards = document.querySelectorAll('.memory-card');
 
-// cards.sort( () => 0.5 - Math.random() );
+
 
 cards.forEach(card => card.addEventListener('click', (e) => {
     return pickCard(e);
@@ -12,12 +24,17 @@ let chosenCards = [];
 function pickCard(event) {
 
     event.target.style.display = 'none';
+
     let exerciseImg = event.target.parentElement.querySelector('.exercise');
     exerciseImg.style.display = 'inline';
     chosenCards.push(exerciseImg)
     console.log(chosenCards)
     if (chosenCards.length === 2) {
-        checkForAMatch()
+        setTimeout(() => {
+            checkForAMatch()
+        }, 1000)
+        
+        
     }
 }
 
@@ -30,14 +47,20 @@ let maxTwoTurns = 0;
 function checkForAMatch() {
     if (chosenCards[0].dataset.exercise === chosenCards[1].dataset.exercise) {
         alert('You found a match!')
-        foundCards++;
+        foundCards+=2;
+        gameWon()
 
 
     } else {
         alert('This is not a match!')
-        console.log(chosenCards)
-        chosenCards[0].setAttribute('src', 'images/Question_Mark.png')
-        chosenCards[1].setAttribute('src', 'images/Question_Mark.png')      
+        // console.log(chosenCards)
+        // chosenCards[0].setAttribute('src', 'images/Question_Mark.png')
+        // chosenCards[1].setAttribute('src', 'images/Question_Mark.png') 
+        console.log(chosenCards[0])
+        chosenCards[0].parentElement.querySelector('.question-mark').style.display = 'inline' 
+        chosenCards[1].parentElement.querySelector('.question-mark').style.display = 'inline'    
+        chosenCards[0].style.display = 'none' 
+        chosenCards[1].style.display = 'none' 
         
     }
     chosenCards = [];
@@ -50,9 +73,12 @@ function gameWon() {
     if (foundCards == cardsInGame){
         alert('Congrats! You found all of the matches!')
     }
-    gameWon();
+    
 }
 
+// Need a way to win the game.
+// Need a time delay between flipping cards and finding matches.
+// Need a way to shuffle cards (randomize or sort).
 
 
 
@@ -60,31 +86,13 @@ function gameWon() {
 
 
 
-// setTimeout(function (chosenCards) {
-        //     console.log(chosenCards)
-        //     chosenCards[0].src = 'images/Question_Mark.png'
-        //     chosenCards[1].src = 'images/Question_Mark.png'
-        //     // chosenCards[0].setAttribute('src', 'images/Question_Mark.png')
-        //     // chosenCards[1].setAttribute('src', 'images/Question_Mark.png')
-        // }, 2000)
+// setTimeout(function (chosenCards) => {
+//             console.log(chosenCards)
+//             chosenCards[0].src = 'images/Question_Mark.png'
+//             chosenCards[1].src = 'images/Question_Mark.png'
+//         }, 2000)
 
 
-// document.body.addEventListener('click', function (e) {
 
-//     if (maxTwoTurns = 2 || chosenCards.length < 2) {
-
-//         if (e.target.tagName === 'IMG') {
-//             chosenCards.push(e.target)
-//             maxTwoTurns = maxTwoTurns + 1;
-//             // if (maxTwoTurns === 1) {
-//             // match comparison with ID's e.target.dataset.exercise
-//         }
-//     } else {
-//         checkForAMatch(chosenCards);
-//         maxTwoTurns = 0;
-//         chosenCards = [0];
-//     }
-
-// })
 
 
