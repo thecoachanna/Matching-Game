@@ -10,6 +10,8 @@ In my card matching game, the player will have the ability to click on cards in 
 
 This project was written in HTML, CSS and JavaScript.
 
+# Problems
+
 # User Stories
 
 MVP Goals:
