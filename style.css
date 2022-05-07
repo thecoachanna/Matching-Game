@@ -1,70 +1,93 @@
-/* images need to all have the same width and height */
-
-/* style memory game container and front and back facing elements. will need flex box. position cards on top of each other*/
-
-/* perspective: adds depth
-transform-style: preserve 3d 
-transition property*/
-
-/* will need to hide the backface visibility + rotate front face 180 on Y */
-
-/* 100x100px squares 300x400 square grid */
-
-body {
-    background-color: #2b2b46
+html, body {
+  background-color: #2b2b46;
+  height: 100%;
 }
 
-h1 {
-    font-size: 50px;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.title {
+  position: absolute;
+  width: auto;
+  margin: 0 auto;
+  top: 7%;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 1px 2px 1px #b34997, 1px 3px 1px #b34997, 1px 4px 1px #b34997,
+    1px 10px 10px rgba(244, 244, 244, 0.2);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transform: translate(50%, -50%);
+  text-transform: uppercase;
 }
 
 .instructions {
-    height: 100px;
-    width: 200px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    flex-wrap: wrap;
-    position: left;
-    
-
+  
+  top: 30%;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  flex-wrap: wrap;
+  position: left;
 }
 
 .memory-game {
-    height: auto;
-    width: 100vw;
-    display: grid;
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px;
-    justify-content: center;
-    gap: 10px;
-    
-    
-    
+  height: auto;
+  width: 125vh;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px;
+  justify-content: center;
+  gap: 10px;
+  perspective: 1000px;
 }
 
 .memory-card {
-    perspective: 1000px;
-    
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  background: #b34997;
 }
 
 .question-mark {
-    padding: 5px;
-    /* display: none; */
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    
+  padding: 5px;
+  /* display: none; */
 }
 
 .exercise {
-    padding: 5px;
-    display: none;
-    
-    
+  padding: 5px;
+  display: none;
+}
+
+#result {
+  position: absolute;
+  width: auto;
+  margin: 0 auto;
+  bottom: 20%;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 1px 2px 1px #b34997, 1px 3px 1px #b34997, 1px 4px 1px #b34997,
+    1px 10px 10px rgba(244, 244, 244, 0.2);
+  color: white;
+  /* text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transform: translate(50%, -50%);
   
 }
+  /* font-size: 30px;
+  bottom: 75%;
+  width: 125vh;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 1px 2px 1px #b34997, 1px 3px 1px #b34997, 1px 4px 1px #b34997,
+    1px 10px 10px rgba(244, 244, 244, 0.2);
+  width: auto; */
+ 
+
