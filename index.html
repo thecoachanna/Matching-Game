@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <title>Card Matching Game</title>
 </head>
 
 <body>
-    <span class="title">Card Matching Memory Game</span>
+    
+    <div class="layout">
     <div class="instructions">
         <h2>Instructions:</h2>
         <span>Click on a card to reveal the image underneath. Continue until you've found the card's match. Game is
             won when you've found all 8 card matches!</span>
     </div>
 
-    
+    <div class="main">
+        <div class="title">Card Matching Game</div>
     <section class="memory-game" id="gameBoard">
         <div class="memory-card">
             <img class="question-mark" data-exercise="back-squat" src="images/Question_Mark.png"
@@ -98,8 +101,11 @@
             <img class="exercise" data-exercise="overhead-squat" src="images/Overhead_Squat.png" alt="Overhead Squat" />
         </div>
 </section>
-
 <h3><span id="result"></span></h3>
+</div>
+</div>
+
+
 
 </body>
 

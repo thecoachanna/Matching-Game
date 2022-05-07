@@ -1,41 +1,45 @@
-html, body {
+html,
+body {
   background-color: #2b2b46;
   height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .title {
-  position: absolute;
   width: auto;
-  margin: 0 auto;
-  top: 7%;
   font-size: 40px;
   font-weight: 700;
   text-shadow: 1px 2px 1px #b34997, 1px 3px 1px #b34997, 1px 4px 1px #b34997,
     1px 10px 10px rgba(244, 244, 244, 0.2);
   color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  transform: translate(50%, -50%);
   text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.layout {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100%;
 }
 
 .instructions {
-  
-  top: 30%;
   text-align: center;
   width: 200px;
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   flex-wrap: wrap;
-  position: left;
+  flex: 0 0 200px;
 }
 
 .memory-game {
   height: auto;
-  width: 125vh;
+  width: 100%;
   display: grid;
   grid-template-rows: 100px 100px 100px 100px;
   grid-template-columns: 100px 100px 100px 100px;
@@ -61,33 +65,11 @@ html, body {
 }
 
 #result {
-  position: absolute;
   width: auto;
-  margin: 0 auto;
-  bottom: 20%;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   text-shadow: 1px 2px 1px #b34997, 1px 3px 1px #b34997, 1px 4px 1px #b34997,
     1px 10px 10px rgba(244, 244, 244, 0.2);
   color: white;
-  /* text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  transform: translate(50%, -50%);
-  
+  margin-top: 20px;
 }
-  /* font-size: 30px;
-  bottom: 75%;
-  width: 125vh;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-shadow: 1px 2px 1px #b34997, 1px 3px 1px #b34997, 1px 4px 1px #b34997,
-    1px 10px 10px rgba(244, 244, 244, 0.2);
-  width: auto; */
- 
-

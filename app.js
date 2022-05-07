@@ -31,7 +31,6 @@ function pickCard(event) {
   let exerciseImg = event.target.parentElement.querySelector(".exercise");
   exerciseImg.style.display = "inline";
   chosenCards.push(exerciseImg);
-  //   console.log(chosenCards);
   if (chosenCards.length === 2) {
     setTimeout(() => {
       checkForAMatch();
@@ -70,10 +69,9 @@ const resultDisplay = document.querySelector('#result')
 function gameWon() {
   if (foundCards == cardsInGame) {
     resultDisplay.textContent = "Congratulations! You found all 8 matches!"
+    party.confetti(document.getElementsByTagName('body')[0],{
+      count: 2000,
+      gravity: 300
+    });
   }
 }
-
-
-// Stretch goals:
-// 1. Add confetti animation once all matching pairs have been found.
-// 2. Clean up CSS to be able to resize and center.
