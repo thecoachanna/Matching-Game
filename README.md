@@ -4,7 +4,9 @@ In my card matching game, the player will have the ability to click on cards in 
 
 # Screenshots
 
-![Screen Shot 2022-05-06 at 9 27 45 AM](https://user-images.githubusercontent.com/99093454/167140907-5a06a72d-a4a0-4165-a85d-5a4d16f9f4dd.png)
+![Screen Shot 2022-05-06 at 8 38 20 PM](https://user-images.githubusercontent.com/99093454/167231010-f711c5a1-00d2-470d-8b3a-95c84c340846.png)
+![Screen Shot 2022-05-06 at 8 40 05 PM](https://user-images.githubusercontent.com/99093454/167231024-6f87fa98-ef46-4eae-9480-a70a9bca3293.png)
+
 
 # Technologies Used
 
@@ -12,11 +14,14 @@ This project was written in HTML, CSS and JavaScript.
 
 # Problems
 
+A stretch goal I didn't get to was adding a stopwatch to track how long it took the user to find all of the matches. The most difficult parts of this were figuring out how to shuffle the cards.
+
 # User Stories
 
 MVP Goals:
 
 As a player, I want to be able to click on an image square and see the hidden image.
+
 As a player, I want my card matches to remain unhidden so that I know how many I have left to match.
 As a player, I want to know when I have found all matching pairs and won the game.
 
