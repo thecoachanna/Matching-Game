@@ -2,6 +2,8 @@
 
 In my card matching game, the player will have the ability to click on cards in order to see the hidden image. Their memory will be tested by trying to remember the location of the matching cards. The user will have won the game when all of the card matches have been found.
 
+Link to live game: https://thecoachanna.github.io/Matching-Game/
+
 # Screenshots
 
 ![Screen Shot 2022-05-06 at 8 38 20 PM](https://user-images.githubusercontent.com/99093454/167231010-f711c5a1-00d2-470d-8b3a-95c84c340846.png)

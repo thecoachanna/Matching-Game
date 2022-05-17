@@ -1,6 +1,12 @@
 html,
 body {
-  background-color: #2b2b46;
+  /* background-color: #2b2b46; */
+  background: rgb(179, 73, 151);
+  background: linear-gradient(
+    0deg,
+    rgba(179, 73, 151, 1) 0%,
+    rgba(43, 43, 70, 1) 70%
+  );
   height: 100%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -68,8 +74,54 @@ body {
   width: auto;
   font-size: 30px;
   font-weight: 700;
-  text-shadow: 1px 2px 1px #b34997, 1px 3px 1px #b34997, 1px 4px 1px #b34997,
+  text-shadow: 1px 2px 1px #2b2b46, 1px 3px 1px #2b2b46 1px 4px 1px #2b2b46,
     1px 10px 10px rgba(244, 244, 244, 0.2);
   color: white;
   margin-top: 20px;
+}
+
+@media(max-width: 600px) {
+  html,
+body {
+  background: rgb(179, 73, 151);
+  background: linear-gradient(
+    0deg,
+    rgba(179, 73, 151, 1) 0%,
+    rgba(43, 43, 70, 1) 70%
+  );
+  height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    transform: scale(0.75) translateX(-9.5%);
+  
+  }
+  .title {
+    width: auto;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 1px 2px 1px #b34997, 1px 3px 1px #b34997, 1px 4px 1px #b34997,
+      1px 10px 10px rgba(244, 244, 244, 0.2);
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .layout {
+    display: flex;
+  }
+
+  .instructions {
+    display: none;
+  }
+
+  #result {
+    width: auto;
+    text-align: center;
+  }
 }
